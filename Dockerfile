@@ -7,11 +7,8 @@ RUN apt-get install -y gcc g++ binutils patch bzip2 flex bison make gettext unzi
 RUN apt-get install -y libc6 libncurses5-dev  automake automake automake
 RUN apt-get install -y git-core
 
-#For X64 systems also:
-
 RUN apt-get install -y libc6-i386 lib32z-dev
 
-#ENV PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin:/opt/brcm-arm/bin
 ENV HOME=/root/
 
 
@@ -34,4 +31,3 @@ RUN apt-get install -y net-tools
 
 RUN make r64e
 
-#RUN /bin/bash
